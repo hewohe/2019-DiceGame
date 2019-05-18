@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Rule_CN">
+
+    <Button
+        android:id="@+id/btn_to_second"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="516dp"
+        android:layout_marginRight="516dp"
+        android:layout_marginBottom="60dp"
+        android:text="返 回"
+        android:textSize="24sp" />
+
+    <com.iigo.library.DiceLoadingView
+        android:id="@+id/dlv_loading1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="200dp"
+        app:animDuration="2000"
+        app:animInterpolator="AccelerateDecelerateInterpolator"
+        app:firstSideDiceBgColor="@android:color/holo_blue_light"
+        app:firstSideDiceBorderColor="@color/colorPrimary"
+        app:firstSideDiceNumber="1"
+        app:firstSideDicePointColor="@color/colorPrimaryDark"
+        app:fourthSideDiceBgColor="@android:color/white"
+        app:fourthSideDiceBorderColor="@android:color/holo_green_dark"
+        app:fourthSideDiceNumber="4"
+        app:fourthSideDicePointColor="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:secondSideDiceBgColor="@android:color/darker_gray"
+        app:secondSideDiceBorderColor="@android:color/holo_orange_dark"
+        app:secondSideDiceNumber="2"
+        app:secondSideDicePointColor="@android:color/holo_green_light"
+        app:thirdSideDiceBgColor="@android:color/holo_blue_dark"
+        app:thirdSideDiceBorderColor="@android:color/white"
+        app:thirdSideDiceNumber="3"
+        app:thirdSideDicePointColor="@android:color/holo_red_dark">
+
+    </com.iigo.library.DiceLoadingView>
+
+</RelativeLayout>

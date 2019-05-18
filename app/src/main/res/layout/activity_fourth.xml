@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    tools:context=".FourthActivity">
+
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginRight="350dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:lineSpacingExtra="36sp"
+            android:text="请 取 走 您 的 卡 片"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.TextView.PopupMenu"
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="Please take your card"
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <com.iigo.library.DiceLoadingView
+        android:id="@+id/dlv_loading1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="200dp"
+        app:animDuration="2000"
+        app:animInterpolator="AccelerateDecelerateInterpolator"
+        app:firstSideDiceBgColor="@android:color/holo_blue_light"
+        app:firstSideDiceBorderColor="@color/colorPrimary"
+        app:firstSideDiceNumber="1"
+        app:firstSideDicePointColor="@color/colorPrimaryDark"
+        app:fourthSideDiceBgColor="@android:color/white"
+        app:fourthSideDiceBorderColor="@android:color/holo_green_dark"
+        app:fourthSideDiceNumber="4"
+        app:fourthSideDicePointColor="@android:color/holo_green_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:secondSideDiceBgColor="@android:color/darker_gray"
+        app:secondSideDiceBorderColor="@android:color/holo_orange_dark"
+        app:secondSideDiceNumber="2"
+        app:secondSideDicePointColor="@android:color/holo_green_light"
+        app:thirdSideDiceBgColor="@android:color/holo_blue_dark"
+        app:thirdSideDiceBorderColor="@android:color/white"
+        app:thirdSideDiceNumber="3"
+        app:thirdSideDicePointColor="@android:color/holo_red_dark" />
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    tools:context=".MultiplayerActivity">
+
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="205dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="387dp"
+        android:layout_marginRight="387dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Score_ColumnH"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Score_ColumnR"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="650dp"
+        android:layout_height="355dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Human_Column"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Score"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ScoreColumn"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Rebot_Column"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/Choice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Human_Score"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/Midlle"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="VS"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="36sp"
+                android:textStyle="bold|italic"
+                android:typeface="sans"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/Rebot_Score"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Indication"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@+id/linearLayout4"
+            android:gravity="center"
+            android:text="Your Turn!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_re_2"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/CONTINUE"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.Widget.PopupMenu.Large"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/btn_to_4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/Quit"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textAppearance="@android:style/TextAppearance.Holo.Widget.Button"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <com.iigo.library.DiceLoadingView
+        android:id="@+id/dlv_loading1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="200dp"
+        app:animDuration="2000"
+        app:animInterpolator="AccelerateDecelerateInterpolator"
+        app:firstSideDiceBgColor="@android:color/holo_blue_light"
+        app:firstSideDiceBorderColor="@color/colorPrimary"
+        app:firstSideDiceNumber="1"
+        app:firstSideDicePointColor="@color/colorPrimaryDark"
+        app:fourthSideDiceBgColor="@android:color/white"
+        app:fourthSideDiceBorderColor="@android:color/holo_green_dark"
+        app:fourthSideDiceNumber="4"
+        app:fourthSideDicePointColor="@android:color/holo_green_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:secondSideDiceBgColor="@android:color/darker_gray"
+        app:secondSideDiceBorderColor="@android:color/holo_orange_dark"
+        app:secondSideDiceNumber="2"
+        app:secondSideDicePointColor="@android:color/holo_green_light"
+        app:thirdSideDiceBgColor="@android:color/holo_blue_dark"
+        app:thirdSideDiceBorderColor="@android:color/white"
+        app:thirdSideDiceNumber="3"
+        app:thirdSideDicePointColor="@android:color/holo_red_dark">
+
+    </com.iigo.library.DiceLoadingView>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--content-->
+    <string name="Start">开始游戏</string>
+    <string name="Rules">游戏规则</string>
+    <string name="Score">你的分数</string>
+    <string name="Choice">对手选择</string>
+    <string name="AccountLog">账户登录</string>
+    <string name="CardLog">插卡登录</string>
+    <string name="CONTINUE">继续游戏</string>
+    <string name="Quit">退出游戏</string>
+    <string name="History">历史战绩</string>
+    <string name="WIN">胜局</string>
+    <string name="LOSE">败局</string>
+    <string name="DRAW">平局</string>
+    <string name="Login">登录</string>
+    <string name="register">注册</string>
+    <string name="findpsw">找回密码</string>
+    <string name="gamemode">游戏模式</string>
+    <string name="maintain">维护模式</string>
+
+    <!--dialog-->
+    <string name="dialog_msg">确定要离开吗？</string>
+    <string name="dialog_positive">确定</string>
+    <string name="dialog_negative">取消</string>
+</resources>

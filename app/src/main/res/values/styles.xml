@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <string-array name="电机维护">
+        <item>电机1</item>
+        <item>电机2</item>
+        <item>电机3</item>
+    </string-array>
+    <string-array name="传感器维护">
+        <item>颜色传感器</item>
+        <item>距离传感器</item>
+    </string-array>
+
+</resources>

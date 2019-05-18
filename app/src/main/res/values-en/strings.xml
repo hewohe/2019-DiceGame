@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--content-->
+    <string name="Start">START！</string>
+    <string name="Rules">GameRules</string>
+    <string name="Score">YourScore</string>
+    <string name="Choice">Choice</string>
+    <string name="AccountLog">Login with account</string>
+    <string name="CardLog">Login with card</string>
+    <string name="CONTINUE">CONTINUE</string>
+    <string name="Quit">QUIT GAME</string>
+    <string name="History">GAME HISTORY</string>
+    <string name="WIN">WIN</string>
+    <string name="LOSE">LOSE</string>
+    <string name="DRAW">DRAW</string>
+    <string name="Login">Log In</string>
+    <string name="register">Register</string>
+    <string name="findpsw">Find Password</string>
+    <string name="gamemode">Game Mode</string>
+    <string name="maintain">Maintain</string>
+
+    <!--dialog-->
+    <string name="dialog_msg">Leave?</string>
+    <string name="dialog_positive">YES</string>
+    <string name="dialog_negative">CANCEL</string>
+</resources>
